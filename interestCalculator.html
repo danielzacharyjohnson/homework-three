@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interest Calculator</title>
+    <style>
+        img {
+            border: 2px solid gray;
+            padding: 5px;
+            width: 60%;
+        }
+        
+        /* div {
+            border: 1px solid black;
+            width: 200px;
+            float: left;
+            padding: 5px 10px;
+            margin-right: 1.5em;
+        } */
+
+        .principle,
+        .interest,
+        .years {
+            float: left;
+            width: 30%;
+            margin-right: 1.5em;
+            display: flex;
+        }
+        
+        section {
+            border: 1px solid black;
+            margin-bottom: 1em;
+            padding: 0.25em 1em;
+        }
+        
+        .clearfix::before,
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Interest Calculator</h1>
+
+    <section>
+        <h3>Interest Calculator Form</h3>
+
+        <div class="principle">
+            <p>Principle</p>
+            <input type="number" id="fullPrinciple" placeholder="Enter Principal Amount" />
+
+        </div>
+
+        <div class="interest">
+            <p>Interest Rate</p>
+            <input type="number" id="interestRate" placeholder="Enter Interest Rate" />
+
+
+        </div>
+        
+        <div class="years">
+            <p>Years</p>
+            <input type="number" id="totalYears" placeholder="Enter Number of Years" />
+
+        </div>
+        
+        <!-- <button id="calculateInterest" onclick = "getInterest()">Calculate Interest</button> -->
+        <input type="button" id="calculateInterest" value="Calculate" />
+
+    </section>
+    <section>
+        <h3>Interest Calculator Results</h3>
+
+        <p id="enteredPrinciple">Entered Principle: </p>
+        <p id="enteredRate">Entered Interest: </p>
+        <p id="enteredYears">Entered Years: </p>
+
+        <p id="totalInterest">Total Interest: </p>
+        <p id="totalAmount">Total Amount: </p>
+        <p id="finalParagraph">Summary:</p>
+        
+    </section>
+
+    <script type ="module" src="app/app.js"></script>
+
+</body>
+
+</html>
